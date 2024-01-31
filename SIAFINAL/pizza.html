@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pizza Shop</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img src="prizza.jpg" alt="">
+<h1>Mr.Swabes Pizza House</h1> 
+        </header>
+        <div class="main">
+
+            <div class="menu">
+                <!-- <h1>MENU</h1>-->
+            </div>
+
+            <label>
+                <input type="radio" name="pizza" id="cheese">
+                <img src="cheesee.jpg" alt="">
+            </label>
+            <p>CHEESE 250</p>
+
+            <label>
+                <input type="radio" name="pizza" id="chicken">
+                <img src="chickenn.jpg" alt="pic">
+                </label>
+                <p>CHICKEN 350</p>
+
+                <label>
+                    <input type="radio" name="pizza" id="hawaiian">
+                   <img src="hawaian.jpg" alt="pic">
+            </label>
+            <p>HAWAIIAN 320</p>
+        </div>
+        <br>
+
+        <div>
+            <label>
+                <input type="radio" name="pizza" id="margherita">
+                <img src="margherita.jpg" alt="pic">
+                </label>
+                <p>MARGHERITA 280</p>
+            </label>
+
+            <label>
+                <input type="radio" name="pizza" id="mushroom">
+                <img src="mushroom.jpg" alt="pic">
+                </label>
+                <p>MUSHROOM 380</p>
+            </label>
+
+            <label>
+                <input type="radio" name="pizza" id="pepperoni">
+                <img src="pepperoni.jpg" alt="pic">
+                </label>
+                <p>PEPPERONI 260</p>
+            </label>
+
+        </div>
+
+        <br>
+
+        <div>
+            <input type="radio" name="pizza" id="seafood">
+            <img src="seafood.jpg" alt="pic">
+            </label>
+            <p>SEA FOOD 350</p>
+
+            <label>
+                <input type="radio" name="pizza" id="sweet">
+                <img src="sweet.jpg" alt="pic">
+                </label>
+                <p>SWEET 230</p>
+            </label>
+
+            <label>
+                <input type="radio" name="pizza" id="vegetarian">
+                <img src="vegetarian.jpg" alt="pic">
+                </label>
+                <p>VEGETARIAN 230</p>
+            </label>
+
+        </div>
+
+        <div class="compute-container">
+
+
+            <div class="qty">
+                <p class="text">Quantity</p>
+                <input type="number"  id="qty" placeholder="0">
+            </div>
+
+            <div class="ct">
+                <p class="text">Cash Tendered</p>
+            </div>
+
+            <div class="discount-container">
+
+                <input type="radio" name="discount" value="" id="none">
+                <img src="nonesign.png" alt="">
+
+                <input type="radio" name="discount" value="" id="pwd">
+                <img src="pwd.png" alt="">
+
+                <input type="radio" name="discount" value="" id="sr">
+                <img src="sr.png" alt="">
+
+
+
+            </div>
+
+            <div class="dcon">Discount <p id="discount-el" class="d"></p> </div>
+
+            <button onclick="compute()">Compute</button>
+
+            <div class="dcon">Total <p id="total-el" class="d"></p></div>
+            <div class="dcon">Discounted Total <p id="DTotal-el" class="d"></p></div>
+            <div class="dcon">Change <p id="change-el" class="d"></p></div>
+            
+    </body>
+</html>
